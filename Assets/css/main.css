@@ -1,0 +1,137 @@
+/* Basic reset and font settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.logo-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-container img {
+    max-width: 150px;
+}
+
+/* Product Gallery Styling */
+.product-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.product-item {
+    text-align: center;
+    margin: 10px;
+    flex-basis: 22%;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-item p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* About Us Section */
+.about-us, .customer-services {
+    padding: 20px;
+    background-color: #e0e0e0;
+}
+
+.about-us h2, .customer-services h2 {
+    margin-bottom: 15px;
+}
+
+/* Customer Services Section */
+.customer-services ul {
+    list-style-type: none;
+}
+
+.customer-services ul li {
+    margin-bottom: 10px;
+}
+
+.customer-services ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Footer styling */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-item {
+        flex-basis: 48%;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .logo-container {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-item {
+        flex-basis: 100%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .logo-container {
+        margin-bottom: 10px;
+    }
+}
