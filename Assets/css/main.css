@@ -25,7 +25,7 @@ header nav {
 header nav ul {
     list-style-type: none;
     display: flex;
-    justify-content: flex-start; /* Aligns the nav items to the left */
+    justify-content: flex-start; 
     margin: 0;
 }
 
@@ -69,13 +69,13 @@ header nav ul li a {
     height: auto;
 }
 
-/* Apply specific border colors to the last two product images */
+
 .product-item:nth-last-child(2) img {
-    border: 2px solid #F1F2F2; /* Light cream border for the second last image */
+    border: 2px solid #F1F2F2; 
 }
 
 .product-item:nth-last-child(1) img {
-    border: 2px solid #F1F2F2; /* Light pink border for the last image */
+    border: 2px solid #F1F2F2; 
 }
 
 .product-item p {
@@ -133,7 +133,7 @@ footer {
 
     header nav ul {
         flex-direction: column;
-        align-items: flex-start; /* Aligns items to the left on smaller screens */
+        align-items: flex-start; 
     }
 
     header nav ul li {
