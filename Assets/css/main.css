@@ -36,7 +36,7 @@ header nav ul li {
 
 header nav ul li a {
     text-decoration: none;
-    color: #000;
+    color: #0c0b0bbb;
     font-weight: bold;
     padding: 5px 10px;
     transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
@@ -44,12 +44,13 @@ header nav ul li a {
 
 /* Hover effect for nav items */
 header nav ul li a:hover {
-    background-color: #000;
+    background-color: #BCBEC0;
     color: #fff;
 }
 
 .logo-container {
     margin-top: 20px;
+    text-align: center; /* Center the logo */
 }
 
 .logo-container img {
@@ -82,7 +83,7 @@ header nav ul li a:hover {
     border: 2px solid #F1F2F2;
 }
 
-product-item:nth-last-child(1) img {
+.product-item:nth-last-child(1) img {
     border: 2px solid #F1F2F2;
 }
 
@@ -96,8 +97,6 @@ product-item:nth-last-child(1) img {
 
 .about-us {
     flex-basis: 25%;
-   
-    
 }
 
 .customer-services {
@@ -150,17 +149,56 @@ footer {
     }
 }
 
-@media (max-width: 480px) {
-    .product-item {
-        flex-basis: 100%;
-    }
-
+@media (max-width: 560px) {
     header nav ul {
         flex-direction: column;
-        align-items: flex-start; 
+        align-items: center; /* Center nav items on small screens */
     }
 
     header nav ul li {
         margin-bottom: 10px;
     }
+
+    .logo-container {
+        text-align: center; /* Ensure logo is centered on small screens */
+        margin: 10px 0;
+    }
+
+    .product-gallery {
+        flex-wrap: wrap; /* Allow wrapping of product items */
+        gap: 10px; /* Reduce gap between products on mobile */
+        justify-content: center;
+    }
+
+    .product-item {
+        flex-basis: 48%; /* Each product takes up 48% width, making two products per row */
+        max-width: 48%; /* Ensure no exceeding of width */
+    }
+
+    .info-sections {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-us, .customer-services {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
 }
+
+@media (max-width: 480px) {
+    .product-gallery {
+        flex-direction: column; /* Stack products vertically */
+        gap: 10px;
+    }
+
+    .product-item {
+        flex-basis: 100%; /* Each product takes up full width on very small screens */
+        max-width: 100%; /* Ensure no exceeding of width */
+    }
+
+
+}
+
+
