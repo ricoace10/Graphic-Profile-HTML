@@ -20,12 +20,13 @@ header {
 header nav {
     background-color: #F1F2F2;
     padding: 10px 20px;
+    width: 100%; /* Make nav bar fill the screen horizontally */
 }
 
 header nav ul {
     list-style-type: none;
     display: flex;
-    justify-content: flex-start; 
+    justify-content: flex-start; /* Aligns the nav items to the left */
     margin: 0;
 }
 
@@ -37,6 +38,14 @@ header nav ul li a {
     text-decoration: none;
     color: #000;
     font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for nav items */
+header nav ul li a:hover {
+    background-color: #000;
+    color: #fff;
 }
 
 .logo-container {
@@ -69,31 +78,36 @@ header nav ul li a {
     height: auto;
 }
 
-
 .product-item:nth-last-child(2) img {
-    border: 2px solid #F1F2F2; 
+    border: 2px solid #F1F2F2;
 }
 
-.product-item:nth-last-child(1) img {
-    border: 2px solid #F1F2F2; 
+product-item:nth-last-child(1) img {
+    border: 2px solid #F1F2F2;
 }
 
-.product-item p {
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-/* About Us Section */
-.about-us, .customer-services {
-    padding: 20px;
+/* Combined About Us and Customer Services Section */
+.info-sections {
+    display: flex;
+    justify-content: space-between; /* Place sections far left and far right */
+    padding: 35px;
     background-color: #DFD8D8;
+}
+
+.about-us {
+    flex-basis: 25%;
+   
+    
+}
+
+.customer-services {
+    flex-basis: 25%;
 }
 
 .about-us h2, .customer-services h2 {
     margin-bottom: 15px;
 }
 
-/* Customer Services Section */
 .customer-services ul {
     list-style-type: none;
 }
@@ -124,6 +138,16 @@ footer {
     header {
         padding: 10px;
     }
+    
+    .info-sections {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-us, .customer-services {
+        flex-basis: 100%;
+        text-align: center;
+    }
 }
 
 @media (max-width: 480px) {
@@ -140,4 +164,3 @@ footer {
         margin-bottom: 10px;
     }
 }
-
