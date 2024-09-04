@@ -20,7 +20,7 @@ header {
 header nav {
     background-color: #F1F2F2;
     padding: 10px 20px;
-    width: 100%; /* Make nav bar fill the screen horizontally */
+    width: 100%; 
 }
 
 header nav ul {
@@ -90,7 +90,7 @@ header nav ul li a:hover {
 /* Combined About Us and Customer Services Section */
 .info-sections {
     display: flex;
-    justify-content: space-between; /* Place sections far left and far right */
+    justify-content: space-between; 
     padding: 35px;
     background-color: #DFD8D8;
 }
@@ -160,19 +160,19 @@ footer {
     }
 
     .logo-container {
-        text-align: center; /* Ensure logo is centered on small screens */
+        text-align: center; 
         margin: 10px 0;
     }
 
     .product-gallery {
-        flex-wrap: wrap; /* Allow wrapping of product items */
-        gap: 10px; /* Reduce gap between products on mobile */
+        flex-wrap: wrap; 
+        gap: 10px; 
         justify-content: center;
     }
 
     .product-item {
-        flex-basis: 48%; /* Each product takes up 48% width, making two products per row */
-        max-width: 48%; /* Ensure no exceeding of width */
+        flex-basis: 48%; 
+        max-width: 48%; 
     }
 
     .info-sections {
@@ -189,13 +189,13 @@ footer {
 
 @media (max-width: 480px) {
     .product-gallery {
-        flex-direction: column; /* Stack products vertically */
+        flex-direction: column; 
         gap: 10px;
     }
 
     .product-item {
-        flex-basis: 100%; /* Each product takes up full width on very small screens */
-        max-width: 100%; /* Ensure no exceeding of width */
+        flex-basis: 100%; 
+        max-width: 100%; 
     }
 
 
